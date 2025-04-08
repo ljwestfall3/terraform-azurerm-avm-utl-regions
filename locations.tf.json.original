@@ -510,37 +510,6 @@
           "availabilityZoneMappings": [
             {
               "logicalZone": "1",
-              "physicalZone": "indonesiacentral-az1"
-            },
-            {
-              "logicalZone": "2",
-              "physicalZone": "indonesiacentral-az3"
-            },
-            {
-              "logicalZone": "3",
-              "physicalZone": "indonesiacentral-az2"
-            }
-          ],
-          "displayName": "Indonesia Central",
-          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/indonesiacentral",
-          "metadata": {
-            "geography": "Indonesia",
-            "geographyGroup": "Asia Pacific",
-            "latitude": "-6.2",
-            "longitude": "106.816666",
-            "pairedRegion": [],
-            "physicalLocation": "Jakarta",
-            "regionCategory": "Recommended",
-            "regionType": "Physical"
-          },
-          "name": "indonesiacentral",
-          "regionalDisplayName": "(Asia Pacific) Indonesia Central",
-          "type": "Region"
-        },
-        {
-          "availabilityZoneMappings": [
-            {
-              "logicalZone": "1",
               "physicalZone": "japaneast-az1"
             },
             {
@@ -577,42 +546,6 @@
           "availabilityZoneMappings": [
             {
               "logicalZone": "1",
-              "physicalZone": "japanwest-az1"
-            },
-            {
-              "logicalZone": "2",
-              "physicalZone": "japanwest-az3"
-            },
-            {
-              "logicalZone": "3",
-              "physicalZone": "japanwest-az2"
-            }
-          ],
-          "displayName": "Japan West",
-          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/japanwest",
-          "metadata": {
-            "geography": "Japan",
-            "geographyGroup": "Asia Pacific",
-            "latitude": "34.6939",
-            "longitude": "135.5022",
-            "pairedRegion": [
-              {
-                "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/japaneast",
-                "name": "japaneast"
-              }
-            ],
-            "physicalLocation": "Osaka",
-            "regionCategory": "Recommended",
-            "regionType": "Physical"
-          },
-          "name": "japanwest",
-          "regionalDisplayName": "(Asia Pacific) Japan West",
-          "type": "Region"
-        },
-        {
-          "availabilityZoneMappings": [
-            {
-              "logicalZone": "1",
               "physicalZone": "koreacentral-az1"
             },
             {
@@ -643,37 +576,6 @@
           },
           "name": "koreacentral",
           "regionalDisplayName": "(Asia Pacific) Korea Central",
-          "type": "Region"
-        },
-        {
-          "availabilityZoneMappings": [
-            {
-              "logicalZone": "1",
-              "physicalZone": "malaysiawest-az1"
-            },
-            {
-              "logicalZone": "2",
-              "physicalZone": "malaysiawest-az3"
-            },
-            {
-              "logicalZone": "3",
-              "physicalZone": "malaysiawest-az2"
-            }
-          ],
-          "displayName": "Malaysia West",
-          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/malaysiawest",
-          "metadata": {
-            "geography": "Malaysia",
-            "geographyGroup": "Asia Pacific",
-            "latitude": "3.140853",
-            "longitude": "101.693207",
-            "pairedRegion": [],
-            "physicalLocation": "Kuala Lumpur",
-            "regionCategory": "Recommended",
-            "regionType": "Physical"
-          },
-          "name": "malaysiawest",
-          "regionalDisplayName": "(Asia Pacific) Malaysia West",
           "type": "Region"
         },
         {
@@ -1087,37 +989,6 @@
           "availabilityZoneMappings": [
             {
               "logicalZone": "1",
-              "physicalZone": "chilecentral-az1"
-            },
-            {
-              "logicalZone": "2",
-              "physicalZone": "chilecentral-az3"
-            },
-            {
-              "logicalZone": "3",
-              "physicalZone": "chilecentral-az2"
-            }
-          ],
-          "displayName": "Chile Central",
-          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/chilecentral",
-          "metadata": {
-            "geography": "Chile",
-            "geographyGroup": "South America",
-            "latitude": "-33.447487",
-            "longitude": "-70.673676",
-            "pairedRegion": [],
-            "physicalLocation": "Santiago",
-            "regionCategory": "Recommended",
-            "regionType": "Physical"
-          },
-          "name": "chilecentral",
-          "regionalDisplayName": "(South America) Chile Central",
-          "type": "Region"
-        },
-        {
-          "availabilityZoneMappings": [
-            {
-              "logicalZone": "1",
               "physicalZone": "israelcentral-az1"
             },
             {
@@ -1378,17 +1249,6 @@
           "type": "Region"
         },
         {
-          "displayName": "Indonesia",
-          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/indonesia",
-          "metadata": {
-            "regionCategory": "Other",
-            "regionType": "Logical"
-          },
-          "name": "indonesia",
-          "regionalDisplayName": "Indonesia",
-          "type": "Region"
-        },
-        {
           "displayName": "Israel",
           "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/israel",
           "metadata": {
@@ -1430,28 +1290,6 @@
           },
           "name": "korea",
           "regionalDisplayName": "Korea",
-          "type": "Region"
-        },
-        {
-          "displayName": "Malaysia",
-          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/malaysia",
-          "metadata": {
-            "regionCategory": "Other",
-            "regionType": "Logical"
-          },
-          "name": "malaysia",
-          "regionalDisplayName": "Malaysia",
-          "type": "Region"
-        },
-        {
-          "displayName": "Mexico",
-          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/mexico",
-          "metadata": {
-            "regionCategory": "Other",
-            "regionType": "Logical"
-          },
-          "name": "mexico",
-          "regionalDisplayName": "Mexico",
           "type": "Region"
         },
         {
@@ -1521,17 +1359,6 @@
           "type": "Region"
         },
         {
-          "displayName": "Spain",
-          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/spain",
-          "metadata": {
-            "regionCategory": "Other",
-            "regionType": "Logical"
-          },
-          "name": "spain",
-          "regionalDisplayName": "Spain",
-          "type": "Region"
-        },
-        {
           "displayName": "Sweden",
           "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/sweden",
           "metadata": {
@@ -1551,17 +1378,6 @@
           },
           "name": "switzerland",
           "regionalDisplayName": "Switzerland",
-          "type": "Region"
-        },
-        {
-          "displayName": "Taiwan",
-          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/taiwan",
-          "metadata": {
-            "regionCategory": "Other",
-            "regionType": "Logical"
-          },
-          "name": "taiwan",
-          "regionalDisplayName": "Taiwan",
           "type": "Region"
         },
         {
@@ -1759,6 +1575,28 @@
           "type": "Region"
         },
         {
+          "displayName": "Japan West",
+          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/japanwest",
+          "metadata": {
+            "geography": "Japan",
+            "geographyGroup": "Asia Pacific",
+            "latitude": "34.6939",
+            "longitude": "135.5022",
+            "pairedRegion": [
+              {
+                "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/japaneast",
+                "name": "japaneast"
+              }
+            ],
+            "physicalLocation": "Osaka",
+            "regionCategory": "Other",
+            "regionType": "Physical"
+          },
+          "name": "japanwest",
+          "regionalDisplayName": "(Asia Pacific) Japan West",
+          "type": "Region"
+        },
+        {
           "displayName": "Jio India West",
           "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/jioindiawest",
           "metadata": {
@@ -1815,10 +1653,6 @@
             {
               "logicalZone": "3",
               "physicalZone": "eastus2euap-az2"
-            },
-            {
-              "logicalZone": "4",
-              "physicalZone": "eastus2euap-az4"
             }
           ],
           "displayName": "East US 2 EUAP",
