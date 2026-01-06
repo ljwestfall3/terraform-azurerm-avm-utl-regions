@@ -17,11 +17,27 @@ If set, the module will only return regions that match the specified geography.
 DESCRIPTION
 }
 
+variable "geography_filters" {
+  type        = set(string)
+  default     = null
+  description = <<DESCRIPTION
+If set, the module will only return regions that match any of the specified geographies.
+DESCRIPTION
+}
+
 variable "geography_group_filter" {
   type        = string
   default     = null
   description = <<DESCRIPTION
 If set, the module will only return regions that match the specified geography group.
+DESCRIPTION
+}
+
+variable "geography_group_filters" {
+  type        = set(string)
+  default     = null
+  description = <<DESCRIPTION
+If set, the module will only return regions that match any of the specified geography groups.
 DESCRIPTION
 }
 
@@ -46,8 +62,6 @@ variable "is_recommended" {
   default     = null
   description = <<DESCRIPTION
 `null` means no filter is applied, `true` means only regions that are recommended are returned, and `false` means only regions that are not recommended are returned.
-
-NOTE: Set the legacy `recommended_filter` variable to `false` to ensure this works as expected.
 DESCRIPTION
 }
 
