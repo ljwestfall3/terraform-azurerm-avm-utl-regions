@@ -48,3 +48,11 @@ avm.tflint_module.merged.hcl
 # MacOS
 .DS_Store
 examples/*/policy
+
+# PR update files are renamed to .original
+*.original
+*.mptfbackup
+.avm
+
+# Other
+AzureBackupGeoCodeMappings.json
