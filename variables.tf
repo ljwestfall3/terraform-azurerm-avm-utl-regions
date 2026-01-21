@@ -17,11 +17,27 @@ If set, the module will only return regions that match the specified geography.
 DESCRIPTION
 }
 
+variable "geography_filters" {
+  type        = set(string)
+  default     = null
+  description = <<DESCRIPTION
+If set, the module will only return regions that match any of the specified geographies.
+DESCRIPTION
+}
+
 variable "geography_group_filter" {
   type        = string
   default     = null
   description = <<DESCRIPTION
 If set, the module will only return regions that match the specified geography group.
+DESCRIPTION
+}
+
+variable "geography_group_filters" {
+  type        = set(string)
+  default     = null
+  description = <<DESCRIPTION
+If set, the module will only return regions that match any of the specified geography groups.
 DESCRIPTION
 }
 
@@ -46,8 +62,6 @@ variable "is_recommended" {
   default     = null
   description = <<DESCRIPTION
 `null` means no filter is applied, `true` means only regions that are recommended are returned, and `false` means only regions that are not recommended are returned.
-
-NOTE: Set the legacy `recommended_filter` variable to `false` to ensure this works as expected.
 DESCRIPTION
 }
 
@@ -55,8 +69,35 @@ variable "region_filter" {
   type        = set(string)
   default     = null
   description = <<DESCRIPTION
-A set of region names (or display names) to filter the output by. If `null`, no filter is applied.
+An inclusive set of region names (or display names) to filter the output by. If `null`, no filter is applied.
 DESCRIPTION
+}
+
+variable "region_name_regex" {
+  type        = string
+  default     = null
+  description = <<DESCRIPTION
+If set, the module will only return regions where the region name matches the specified regular expression.
+The default match mode is `match`, which means the region name must match the regex.
+You can change this behavior to `not_match` by setting the `region_name_regex_mode` variable.
+DESCRIPTION
+}
+
+variable "region_name_regex_mode" {
+  type        = string
+  default     = "match"
+  description = <<DESCRIPTION
+Specifies the regex mode to use when filtering by `region_name_regex`.
+
+- `match`: The region name must match the regex.
+- `not_match`: The region name must not match the regex.
+DESCRIPTION
+  nullable    = false
+
+  validation {
+    condition     = contains(["match", "not_match"], var.region_name_regex_mode)
+    error_message = "region_name_regex_mode must be either 'match' or 'not_match'."
+  }
 }
 
 variable "use_cached_data" {

@@ -67,11 +67,27 @@ Type: `string`
 
 Default: `null`
 
+### <a name="input_geography_filters"></a> [geography\_filters](#input\_geography\_filters)
+
+Description: If set, the module will only return regions that match any of the specified geographies.
+
+Type: `set(string)`
+
+Default: `null`
+
 ### <a name="input_geography_group_filter"></a> [geography\_group\_filter](#input\_geography\_group\_filter)
 
 Description: If set, the module will only return regions that match the specified geography group.
 
 Type: `string`
+
+Default: `null`
+
+### <a name="input_geography_group_filters"></a> [geography\_group\_filters](#input\_geography\_group\_filters)
+
+Description: If set, the module will only return regions that match any of the specified geography groups.
+
+Type: `set(string)`
 
 Default: `null`
 
@@ -95,19 +111,38 @@ Default: `null`
 
 Description: `null` means no filter is applied, `true` means only regions that are recommended are returned, and `false` means only regions that are not recommended are returned.
 
-NOTE: Set the legacy `recommended_filter` variable to `false` to ensure this works as expected.
-
 Type: `bool`
 
 Default: `null`
 
 ### <a name="input_region_filter"></a> [region\_filter](#input\_region\_filter)
 
-Description: A set of region names (or display names) to filter the output by. If `null`, no filter is applied.
+Description: An inclusive set of region names (or display names) to filter the output by. If `null`, no filter is applied.
 
 Type: `set(string)`
 
 Default: `null`
+
+### <a name="input_region_name_regex"></a> [region\_name\_regex](#input\_region\_name\_regex)
+
+Description: If set, the module will only return regions where the region name matches the specified regular expression.  
+The default match mode is `match`, which means the region name must match the regex.  
+You can change this behavior to `not_match` by setting the `region_name_regex_mode` variable.
+
+Type: `string`
+
+Default: `null`
+
+### <a name="input_region_name_regex_mode"></a> [region\_name\_regex\_mode](#input\_region\_name\_regex\_mode)
+
+Description: Specifies the regex mode to use when filtering by `region_name_regex`.
+
+- `match`: The region name must match the regex.
+- `not_match`: The region name must not match the regex.
+
+Type: `string`
+
+Default: `"match"`
 
 ### <a name="input_use_cached_data"></a> [use\_cached\_data](#input\_use\_cached\_data)
 
