@@ -2308,32 +2308,6 @@
           "name": "westusstage",
           "regionalDisplayName": "(US) West US (Stage)",
           "type": "Region"
-        },
-        {
-          "displayName": "US Gov Virginia",
-          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/usgovvirginia",
-          "metadata": {
-            "geography": "United States",
-            "geographyGroup": "US",
-            "regionCategory": "Recommended",
-            "regionType": "Physical"
-          },
-          "name": "usgovvirginia",
-          "regionalDisplayName": "(US) US Gov Virginia",
-          "type": "Region"
-        },
-        {
-          "displayName": "US Gov Texas",
-          "id": "/subscriptions/2a8527ca-5340-49aa-8931-ea03669451a0/locations/usgovtexas",
-          "metadata": {
-            "geography": "United States",
-            "geographyGroup": "US",
-            "regionCategory": "Recommended",
-            "regionType": "Physical"
-          },
-          "name": "usgovtexas",
-          "regionalDisplayName": "(US) US Gov Texas",
-          "type": "Region"
         }
       ]
     }
